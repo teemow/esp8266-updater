@@ -1,0 +1,10 @@
+[Unit]
+Description=ESP8266 Updater
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/esp8266-updater
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
